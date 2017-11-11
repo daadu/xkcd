@@ -68,9 +68,9 @@ def set_wallpaper():
         mint = "gsettings set org.cinnamon.desktop.background picture-uri " + linux_path
         ubuntu = "gsettings set org.gnome.desktop.background picture-uri " + linux_path
         try:
-            os.system(mint)
-        except:
             os.system(ubuntu)
+        except:
+            os.system(mint)
 
     elif os_identification() == "linux":
         linux_path = "out.png"
